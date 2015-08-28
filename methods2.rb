@@ -1,12 +1,50 @@
 module Methods2
 	
-	# TODO - write elevenish?
+def elevenish?(n)
+	if(n % 11 == 0 || n % 11 == 1)
+		return true
+	else
+		return false
+	end
+end
 	
-	# TODO - write ice_cream_party?
+def ice_cream_party(ice_cream, candy)
+	if(ice_cream >= 5 && candy >= 5)
+		if(ice_cream >= (candy * 2)|| candy >= (ice_cream * 2))
+			2;
+		else
+			1;
+		end
+	else
+		0;
+	end
+end
 	
-	# TODO - write successful_squirrel_party?
+def successful_squirrel_party?(nuts, weekend)
+	if(nuts >= 40)
+		if(weekend)
+			true
+		else
+			if(nuts <= 60)
+				true
+			else
+				false
+			end
+		end
+	else
+		false
+	end
+end
 	
-	# TODO - write ticket
+def ticket(a,b,c)
+	if(a * b == 10 || b * c == 10 || c * a == 10)
+		10
+	elsif((a * b)-(b * c) == 10 || (a * b)-(a * c) == 10)
+		5
+	else
+		0
+	end
+end
 
 	# TODO - write in_order?
 
