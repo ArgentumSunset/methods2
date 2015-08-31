@@ -78,7 +78,7 @@ def fizz_string(str)
 		if(str.end_with?('b'))
 			"FizzBuzz"
 		else
-		"Fizz"
+			"Fizz"
 		end
 	elsif(str.end_with?('b'))
 		"Buzz"
@@ -87,7 +87,8 @@ def fizz_string(str)
 	end
 end
 
-	# TODO - write first_last_six?
+def first_last_six
+end
 
 	# TODO - write rotate_left
 
