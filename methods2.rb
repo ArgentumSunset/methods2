@@ -37,20 +37,45 @@ def successful_squirrel_party?(nuts, weekend)
 end
 	
 def ticket(a,b,c)
-	if(a * b == 10 || b * c == 10 || c * a == 10)
+	if((a + b == 10) || (b + c == 10) || (c + a == 10))
 		10
-	elsif((a * b)-(b * c) == 10 || (a * b)-(a * c) == 10)
+	elsif((a + b)-(b + c) == 10 || (a + b)-(a + c) == 10)
 		5
 	else
 		0
 	end
 end
 
-	# TODO - write in_order?
+def in_order?(a,b,c,bOk)
+	if(c > b)
+		if(bOk)
+			true
+		elsif(!bOk)
+			if(b > a)
+				true
+			else
+				false
+			end
+		end
+	else
+		false
+	end
+end
 
-	# TODO - write less_by_ten?
+def less_by_ten?(a,b,c)
+	ab = (a - b).abs
+	ac = (a - c).abs
+	bc = (b - c).abs
+	if(ab >= 10 || ac >= 10 || bc >= 10)
+		true
+	else
+		false
+	end
+end
 	
-	# TODO - write fizz_string
+def fizz_string(str)
+	
+end
 
 	# TODO - write first_last_six?
 
