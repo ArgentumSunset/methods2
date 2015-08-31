@@ -41,10 +41,13 @@ class Methods2Test < MiniTest::Test
 
 	def test_in_order
 		assert_equal true, @m.in_order?(1,2,3,false)
+		assert_equal true, @m.in_order?(1,2,3,true)
 		assert_equal true, @m.in_order?(2,1,3,true)
 		assert_equal false, @m.in_order?(1,2,1,false)
 		assert_equal false, @m.in_order?(2,1,3,false)
 		assert_equal false, @m.in_order?(1,1,1,false)
+		assert_equal false, @m.in_order?(1,1,1,false)
+		assert_equal false, @m.in_order?(1,2,1,true)
 	end
 
 	def test_less_by_ten
@@ -53,5 +56,12 @@ class Methods2Test < MiniTest::Test
 		assert_equal true, @m.less_by_ten?(4,15,4)
 		assert_equal true, @m.less_by_ten?(4,4,15)
 		assert_equal true, @m.less_by_ten?(10,10,-10)
+	end
+
+	def test_fizz_string 
+		assert_equal "Fizz", @m.fizz_string('frigid')
+		assert_equal "Buzz", @m.fizz_string("The German Army had pushed almost all the way across Russia's wilderness to the river Ob")
+		assert_equal "FizzBuzz", @m.fizz_string("faaaaaab") #ulous!
+		assert_equal "Horaldo Rivera", @m.fizz_string("Horaldo Rivera")
 	end
 end

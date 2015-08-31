@@ -74,7 +74,17 @@ def less_by_ten?(a,b,c)
 end
 	
 def fizz_string(str)
-	
+	if(str.start_with?('f'))
+		if(str.end_with?('b'))
+			"FizzBuzz"
+		else
+		"Fizz"
+		end
+	elsif(str.end_with?('b'))
+		"Buzz"
+	else
+		str
+	end
 end
 
 	# TODO - write first_last_six?
