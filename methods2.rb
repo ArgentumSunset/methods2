@@ -74,20 +74,19 @@ def less_by_ten?(a,b,c)
 end
 	
 def fizz_string(str)
-	if(str.start_with?('f'))
-		if(str.end_with?('b'))
-			"FizzBuzz"
-		else
-			"Fizz"
-		end
+	if(str.start_with?('f') && str.end_with?('b'))
+		"FizzBuzz"
 	elsif(str.end_with?('b'))
 		"Buzz"
+	elsif(str.start_with?('f'))
+		"Fizz"
 	else
 		str
 	end
 end
 
 def first_last_six
+
 end
 
 	# TODO - write rotate_left
