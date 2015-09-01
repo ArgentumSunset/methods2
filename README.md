@@ -70,11 +70,13 @@ Write the following methods. Start with the tests, then use them to create your 
 
     ##To install this at home:
 
-1. git clone your repository
+1. gist.github.com/manisjp
 
-2. bundle install
+2. git clone your repository
 
-3. install 
+3. bundle install
+
+4. install 
     - Ruby
     - Git
     - Sublime Text
