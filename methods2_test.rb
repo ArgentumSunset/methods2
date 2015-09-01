@@ -77,4 +77,12 @@ class Methods2Test < MiniTest::Test
 		assert_equal ['Holy Roman Empire', 'Ottoman Empire', 'Duchy of Savoy'], @m.rotate_left(['Duchy of Savoy', 'Holy Roman Empire', 'Ottoman Empire'])
 		assert_equal [[4,5,6],[7,8,9],[1,2,3]], @m.rotate_left([[1,2,3],[4,5,6],[7,8,9]])
 	end
+
+	def test_double23
+		assert_equal false, @m.double23?([])
+		assert_equal false, @m.double23?([2])
+		assert_equal false, @m.double23?([2,3])
+		assert_equal true, @m.double23?([2,2])
+		assert_equal true, @m.double23?([3,3])
+	end
 end

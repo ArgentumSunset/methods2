@@ -99,6 +99,16 @@ def rotate_left(ints)
 	ints
 end
 
-	# TODO - write double23?
+def double23?(ints)
+	if(ints.length == 2)
+		if((ints.first == 2 && ints.last == 2) || (ints.first == 3 && ints.last == 3))
+			true
+		else
+			false
+		end
+	else
+		false
+	end
+end
 
 end
