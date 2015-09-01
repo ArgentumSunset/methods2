@@ -93,7 +93,11 @@ def first_last_six?(ints)
 	end
 end
 
-	# TODO - write rotate_left
+def rotate_left(ints)
+	first = ints.shift
+	ints << first
+	ints
+end
 
 	# TODO - write double23?
 

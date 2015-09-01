@@ -71,4 +71,10 @@ class Methods2Test < MiniTest::Test
 		assert_equal true, @m.first_last_six?([17,9,5,5,6])
 		assert_equal false, @m.first_last_six?([5,7,8])
 	end
+
+	def test_rotate_left
+		assert_equal [2,3,1], @m.rotate_left([1,2,3])
+		assert_equal ['Holy Roman Empire', 'Ottoman Empire', 'Duchy of Savoy'], @m.rotate_left(['Duchy of Savoy', 'Holy Roman Empire', 'Ottoman Empire'])
+		assert_equal [[4,5,6],[7,8,9],[1,2,3]], @m.rotate_left([[1,2,3],[4,5,6],[7,8,9]])
+	end
 end
