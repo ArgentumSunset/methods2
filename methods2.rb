@@ -85,8 +85,12 @@ def fizz_string(str)
 	end
 end
 
-def first_last_six
-
+def first_last_six?(ints)
+	if(ints.first == 6 || ints.last == 6)
+		true
+	else
+		false
+	end
 end
 
 	# TODO - write rotate_left

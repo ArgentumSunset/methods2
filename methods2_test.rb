@@ -64,4 +64,11 @@ class Methods2Test < MiniTest::Test
 		assert_equal "FizzBuzz", @m.fizz_string("faaaaaab") #ulous!
 		assert_equal "Horaldo Rivera", @m.fizz_string("Horaldo Rivera")
 	end
+
+	def test_first_last_six
+		assert_equal true, @m.first_last_six?([6])
+		assert_equal true, @m.first_last_six?([6,7,9,4,3])
+		assert_equal true, @m.first_last_six?([17,9,5,5,6])
+		assert_equal false, @m.first_last_six?([5,7,8])
+	end
 end
