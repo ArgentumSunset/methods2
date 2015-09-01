@@ -67,3 +67,14 @@ Write the following methods. Start with the tests, then use them to create your 
 10. double23?
 
     Given an integer array, return true if the array contains 2 twice, or 3 twice. The array will have 0, 1, or 2 elements.
+
+    ##To install this at home:
+
+1. git clone your repository
+
+2. bundle install
+
+3. install 
+    - Ruby
+    - Git
+    - Sublime Text
